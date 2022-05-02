@@ -1,0 +1,99 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+}
+.header {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    margin-left: 10px;
+    width: 97px;
+    height: 30px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-list {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    gap: 54px;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation__item {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 10px;
+    color:#2B3541;
+    transition: 0.2s;
+}
+
+.navigation__item:hover{
+    border-bottom: 1px solid #2B3541;
+    transition: 0.2s;
+}
+
+.navigation-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation-icons__inst {
+    background-image: url(../images/instagram.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    transition: 0.2s;
+}
+
+.navigation-icons__inst:hover {
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+
+.navigation-icons__fb {
+    background-image: url(../images/facebook.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    transition: 0.2s;
+}
+
+.navigation-icons__fb:hover {
+    transform: scale(1.5);
+    transition: 0.2s;
+}
