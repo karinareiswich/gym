@@ -20,13 +20,13 @@
                     <nav class="navigation">
                         <ul class="navigation-list">
                             <li>
-                                <a class="navigation__item" href="#">Мероприятия</a>
+                                <a class="navigation__item" href="#event-fit">Мероприятия</a>
                             </li>
                             <li>
-                                <a class="navigation__item" href="">Расписание</a>
+                                <a class="navigation__item" href="#menu-fit">Расписание</a>
                             </li>
                             <li>
-                                <a class="navigation__item" href="#">О компании</a>
+                                <a class="navigation__item" href="#info-fit">О компании</a>
                             </li>
                         </ul>
                 </div>
@@ -37,7 +37,7 @@
                 </nav>
             </div>
         </header>
-        <main>
+        <main class="main-container">
             <section class="banner">
                 <div class="banner-container">
                     <div class="banner-content">
@@ -51,7 +51,7 @@
                                 в области спортивной <br />
                                 физиологии и нутрициологии
                             </p>
-                            <a href="#" class="menu__link">узнать подробнее</a>
+                            <a href="#popup" class="menu__link">узнать подробнее</a>
                         </div>
                     </div>
                     <div class="box">
@@ -61,8 +61,9 @@
                             alt="fitness-girl" />
                     </div>
                 </div>
+                <a href="#menu-fit" class="menu__fit scroll"></a>
             </section>
-            <section class="event">
+            <section class="event" id="event-fit">
                 <div class="event-container">
                     <h3 class="event__title">
                         Ближайшие события
@@ -73,7 +74,7 @@
                                 <p class="event__data">29.06 - 4.07</p>
                                 <p class="event__name">Марафон <br>
                                     выносливости</p>
-                                <a href="#" class="event__link">Участвовать</a>
+                                <a href="#popup" class="event__link" >Участвовать</a>
                                 <button class="event__button">
                                     марафон
                                 </button>
@@ -84,7 +85,7 @@
                                 <p class="event__data">9.07</p>
                                 <p class="event__name">Как стать <br>
                                     тренером?</p>
-                                <a href="#" class="event__link">Участвовать</a>
+                                <a href="#popup" class="event__link">Участвовать</a>
                                 <button class="event__button">
                                     вебинар
                                 </button>
@@ -95,7 +96,7 @@
                                 <p class="event__data">15.07</p>
                                 <p class="event__name"> Йога, как стиль <br>
                                     жизни</p>
-                                <a href="#" class="event__link">Участвовать</a>
+                                <a href="#popup" class="event__link">Участвовать</a>
                                 <button class="event__button">
                                     вебинар
                                 </button>
@@ -104,7 +105,7 @@
                     </div>
                 </div>
             </section>
-            <section class="description">
+            <section class="description" id="menu-fit">
                 <h3 class="event__title">
                     Расписание
                     тренировок
@@ -196,51 +197,51 @@
                 </div>
             </section>
             <section class="info">
-                    <div class="info-wrapper">
-                        <div class="info-box">
-                            <h3 class="event__title" id="company">О компании</h3>
-                            <p class="info__text">
-                                Наша компания является одной из немногих, кто
-                                предлагает фитнес услуги онлайн! Оставайтесь
-                                <br />с нами и вы сами увидите, что мы проводим
-                                <br />не только онлайн-тренировки.
-                            </p>
-                            <a href="#" class="info__link">ЗАПИСАТЬСЯ</a>
-                        </div>
-                        <div class="info-content">
-                            <img class="info__img" src="images/company.png" alt="info-gym" width="580px" height="336px" />
-                        </div>
+                <div class="info-wrapper">
+                    <div class="info-box">
+                        <h3 class="event__title" id="info-fit">О компании</h3>
+                        <p class="info__text">
+                            Наша компания является одной из немногих, кто
+                            предлагает фитнес услуги онлайн! Оставайтесь
+                            <br />с нами и вы сами увидите, что мы проводим
+                            <br />не только онлайн-тренировки.
+                        </p>
+                        <a href="#" class="info__link">ЗАПИСАТЬСЯ</a>
                     </div>
-                    <div class="info-wrap">
-                        <div class="info-inner">
-                            <span class="info__span">Экономия времени</span>
-                            <p class="info__subject">
-                                Не нужно тратить время <br />
-                                на дорогу
-                            </p>
-                        </div>
-                        <div class="info-inner">
-                            <span class="info__span">Индивидуальный подход</span>
-                            <p class="info__subject">
-                                Внимание тренера <br />
-                                принадлежит только вам
-                            </p>
-                        </div>
-                        <div class="info-inner">
-                            <span class="info__span">Экономия денег</span>
-                            <p class="info__subject">
-                                Средняя цена одной <br />
-                                тренировки - 700 рублей
-                            </p>
-                        </div>
-                        <div class="info-inner">
-                            <span class="info__span">Опытный персонал</span>
-                            <p class="info__subject">
-                                Стаж работы наших <br />
-                                тренеров от 5 лет
-                            </p>
-                        </div>
+                    <div class="info-content">
+                        <img class="info__img" src="images/company.png" alt="info-gym" width="580px" height="336px" />
                     </div>
+                </div>
+                <div class="info-wrap">
+                    <div class="info-inner">
+                        <span class="info__span">Экономия времени</span>
+                        <p class="info__subject">
+                            Не нужно тратить время <br />
+                            на дорогу
+                        </p>
+                    </div>
+                    <div class="info-inner">
+                        <span class="info__span">Индивидуальный подход</span>
+                        <p class="info__subject">
+                            Внимание тренера <br />
+                            принадлежит только вам
+                        </p>
+                    </div>
+                    <div class="info-inner">
+                        <span class="info__span">Экономия денег</span>
+                        <p class="info__subject">
+                            Средняя цена одной <br />
+                            тренировки - 700 рублей
+                        </p>
+                    </div>
+                    <div class="info-inner">
+                        <span class="info__span">Опытный персонал</span>
+                        <p class="info__subject">
+                            Стаж работы наших <br />
+                            тренеров от 5 лет
+                        </p>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
@@ -250,21 +251,19 @@
                     <nav class="navigation">
                         <ul class="navigation-list">
                             <li>
-                                <a class="navigation__item" href="#">Мероприятия</a>
+                                <a class="navigation__item" href="#event-fit">Мероприятия</a>
                             </li>
                             <li>
-                                <a class="navigation__item" href="">Расписание</a>
+                                <a class="navigation__item" href="#menu-fit">Расписание</a>
                             </li>
                             <li>
-                                <a class="navigation__item" href="#">О компании</a>
+                                <a class="navigation__item" href="#info-fit">О компании</a>
                             </li>
                         </ul>
                 </div>
                 <ul class="navigation-icons bool">
                     <li>
-                        <a href="#" class="info__email"
-                            >info@freefit.com</a
-                        >
+                        <a href="#" class="info__email">info@freefit.com</a>
                     </li>
                     <li><a class="navigation-icons__inst" href="#"></a></li>
                     <li><a class="navigation-icons__fb" href="#"></a></li>
@@ -272,7 +271,69 @@
                 </nav>
             </div>
         </footer>
+
+        <div class="modal" id="popup">
+            <div class="modal-container">
+                <a href="#" class="modal__close"></a>
+                <h3 class="modal__title">
+                    Заявка на участие в наших инфо-продуктах
+                    <span class="modal__span"></span>
+                </h3>
+                <p class="modal__text">
+                    Заполните все поля, и мы пришлем информацию в ближайшее
+                    время
+                </p>
+                <form action="#form" class="modal__form">
+                    <input
+                        type="email"
+                        placeholder="Ваш e-mail"
+                        name="email"
+                        class="modal__email"
+                        required
+                    />
+                    <input
+                        type="tel"
+                        placeholder="Ваш номер телефона"
+                        name="phone"
+                        class="modal__email"
+                        required
+                    />
+                    <button type="submit" class="modal__button">отправить</button>
+                    <p class="popup__text"></p>
+                </form>
+            </div>
+        </div>
     </div>
+
+    <script>
+
+        //Scroll
+
+        const links = document.querySelectorAll(".scroll");
+
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth",
+            });
+        }
+//Popup
+
+function closePopup() {
+                document.getElementById("popup").style.top = "-2000px";
+            }
+       
+    </script>
+</body>
+
+</html>
+
 </body>
 
 </html>
