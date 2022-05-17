@@ -37,7 +37,7 @@
                 </nav>
             </div>
         </header>
-        <main class="main-container">
+        <main>
             <section class="banner">
                 <div class="banner-container">
                     <div class="banner-content">
@@ -74,7 +74,7 @@
                                 <p class="event__data">29.06 - 4.07</p>
                                 <p class="event__name">Марафон <br>
                                     выносливости</p>
-                                <a href="#popup" class="event__link" >Участвовать</a>
+                                <a href="#popup" class="event__link">Участвовать</a>
                                 <button class="event__button">
                                     марафон
                                 </button>
@@ -179,14 +179,15 @@
                         </h3>
                         <div class="contact-flex">
                             <input class="contact__email" type="email" placeholder="Ваш e-mail" required />
-                            <span class="contact__mark"></span>
                             <button type="submit" class="contact__button">
                                 ПОДПИСАТЬСЯ
                             </button>
                         </div>
                         <div class="contact-checkbox">
-                            <input type="checkbox" id="01" class="checkbox__input" />
-                            <label for="01"></label>
+                            <label for="01" class="contact__control">
+                                <input type="checkbox" id="01" class="checkbox__input" />
+                                <span class="control__mark"></span>
+                            </label>
                             <p class="contact__text">
                                 Согласен с обработкой
                                 <a href="#" class="contact__link">
@@ -284,22 +285,9 @@
                     время
                 </p>
                 <form action="#form" class="modal__form">
-                    <input
-                        type="email"
-                        placeholder="Ваш e-mail"
-                        name="email"
-                        class="modal__email"
-                        required
-                    />
-                    <input
-                        type="tel"
-                        placeholder="Ваш номер телефона"
-                        name="phone"
-                        class="modal__email"
-                        required
-                    />
+                    <input type="email" placeholder="Ваш e-mail" name="email" class="modal__email" required />
+                    <input type="tel" placeholder="Ваш номер телефона" name="phone" class="modal__email" required />
                     <button type="submit" class="modal__button">отправить</button>
-                    <p class="popup__text"></p>
                 </form>
             </div>
         </div>
@@ -323,17 +311,14 @@
                 behavior: "smooth",
             });
         }
-//Popup
 
-function closePopup() {
-                document.getElementById("popup").style.top = "-2000px";
-            }
-       
+        //Popup
+
+        function closePopup() {
+            document.getElementById("popup").style.top = "-2000px";
+        }
+
     </script>
-</body>
-
-</html>
-
 </body>
 
 </html>
