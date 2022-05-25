@@ -851,6 +851,12 @@ input:invalid {
 
 /*adaptive*/
 
+@media (max-width: 1920px) {
+    .mobile {
+        display: none;
+    }
+}
+
 @media (max-width: 1392px) {
     .banner-img {
         right: 0;
@@ -1159,6 +1165,9 @@ input:invalid {
     .info__link {
     width: 100%;
     padding:25px 223px ;
+    }
+    .mobile {
+        display: block;
     }
 }
 
