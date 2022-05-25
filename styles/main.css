@@ -343,6 +343,7 @@ body {
 .event__button {
     position: absolute;
     right: 0;
+    color: #2B3541;
     bottom: 0;
     background-color: #fbf138;
     border: none;
@@ -832,6 +833,7 @@ input:invalid {
 
 .modal-container__button {
     margin: 0 auto;
+    color: #2B3541;
     border: none;
     background-color:#FBF138 ;
     padding: 19px 184px;
@@ -1175,7 +1177,7 @@ input:invalid {
 
 @media (max-width: 576px) {
     .header {
-        width: 320px;
+        width: 340px;
     }
     .header-container__logo {
         width: 80px;
@@ -1193,7 +1195,7 @@ input:invalid {
         margin-top: -65px;
     }
     .event {
-        width: 320px;
+        width: 340px;
         margin-top: 75px;
     }
     .event-wrapper {
@@ -1205,11 +1207,11 @@ input:invalid {
         text-align: center;
     }
     .description {
-        width: 320px;
+        width: 340px;
     }
 
     .contact {
-        width: 320px;
+        width: 340px;
     }
     .contact__email {
         width: 140px;
@@ -1225,7 +1227,7 @@ input:invalid {
         z-index: 15;
     }
     .info {
-        width: 320px;
+        width: 340px;
         padding-top: 47px;
     }
     .info__link {
