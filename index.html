@@ -20,6 +20,10 @@
                     <a class="header-container__logo" href="#"></a>
                     <div class="navigation">
                         <nav>
+                            <button
+                                class="burger__btn"
+                                onclick="openModal()"
+                            ></button>
                             <ul class="navigation__list">
                                 <li>
                                     <a
@@ -383,6 +387,19 @@
                     </nav>
                 </div>
             </footer>
+
+            <!-- Mobile menu -->
+            <div id="mobile" class="mobile">
+                <ul class="header-nav">
+                    <li><a href="index.html">Мероприятия</a></li>
+                    <li><a href="#" class="active">Расписание</a></li>
+                    <li><a href="#">О компании</a></li>
+                </ul>
+                <button class="burger-close" onclick="closeModal()"></button>
+            </div>
+
+            <!-- Modal window -->
+
             <div class="modal" id="popup">
                 <div class="modal-container">
                     <a href="#" class="modal-container__close"></a>
@@ -418,7 +435,7 @@
         </div>
 
         <script>
-            //Scroll
+            /* Scroll */
 
             const links = document.querySelectorAll(".scroll");
 
@@ -435,10 +452,20 @@
                 });
             }
 
-            //Popup
+            /* Popup */
 
             function closePopup() {
                 document.getElementById("popup").style.top = "-2000px";
+            }
+
+            /* Menu */
+
+            function openModal() {
+                document.getElementById("mobile").style.top = "0px";
+            }
+
+            function closeModal() {
+                document.getElementById("mobile").style.top = "-400px";
             }
         </script>
     </body>
