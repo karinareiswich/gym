@@ -14,8 +14,8 @@
     </head>
 
     <body>
-        <div class="header">
-            <header>
+        <header>
+            <div class="header">
                 <div class="header-container">
                     <a class="header-container__logo" href="#"></a>
                     <div class="navigation">
@@ -56,39 +56,38 @@
                         </ul>
                     </nav>
                 </div>
-            </header>
-            <div class="banner">
-                <div class="banner-container">
-                    <div class="banner-description">
-                        <div class="banner-wrapp">
-                            <h1 class="banner-title">
-                                онлайн тренировки <br />
-                                любой сложности
-                            </h1>
-                            <h2 class="banner-count">&gt; 15 тренировок</h2>
-                        </div>
-                        <div class="banner-text-box">
-                            <p class="banner__text">
-                                в области спортивной физиологии и нутрициологии
-                            </p>
-                            <a
-                                href="#"
-                                class="banner-link"
-                                title="Узнать подробнее"
-                                >Узнать подробнее</a
-                            >
-                        </div>
-                        <a href="#menu-fit" class="banner-arrow scroll"></a>
+            </div>
+        </header>
+        <div class="banner">
+            <div class="banner-container">
+                <div class="banner-description">
+                    <div class="banner-wrapp">
+                        <h1 class="banner-title">
+                            онлайн тренировки <br />
+                            любой сложности
+                        </h1>
+                        <h2 class="banner-count">&gt; 15 тренировок</h2>
                     </div>
-                    <div class="banner-bg">
-                        <div class="banner-gradient-left"></div>
-                        <div class="banner-gradient-right"></div>
-                        <div class="banner-img"></div>
+                    <div class="banner-text-box">
+                        <p class="banner__text">
+                            в области спортивной физиологии и нутрициологии
+                        </p>
+                        <a href="#" class="banner-link" title="Узнать подробнее"
+                            >Узнать подробнее</a
+                        >
                     </div>
+                    <a href="#menu-fit" class="banner-arrow scroll"></a>
+                </div>
+                <div class="banner-bg">
+                    <div class="banner-gradient-left"></div>
+                    <div class="banner-gradient-right"></div>
+                    <div class="banner-img"></div>
                 </div>
             </div>
-            <main>
-                <section class="event" id="event-fit">
+        </div>
+        <main>
+            <section class="event" id="event-fit">
+                <div class="container">
                     <div class="event-container">
                         <h3 class="event__title">Ближайшие события</h3>
                         <div class="event-wrapper">
@@ -139,8 +138,10 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="description" id="menu-fit">
+                </div>
+            </section>
+            <section class="description" id="menu-fit">
+                <div class="header">
                     <h3 class="event__title">Расписание тренировок</h3>
                     <div class="description-grid">
                         <div class="description-box">
@@ -249,44 +250,44 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="contact">
-                    <div class="contact-wrapper">
-                        <form action="#" class="contact__form">
-                            <h3 class="contact__title">
-                                Подпишись на рассылку
-                            </h3>
-                            <div class="contact-flex">
+                </div>
+            </section>
+            <section class="contact">
+                <div class="contact-wrapper">
+                    <form action="#" class="contact__form">
+                        <h3 class="contact__title">Подпишись на рассылку</h3>
+                        <div class="contact-flex">
+                            <input
+                                class="contact__email"
+                                type="email"
+                                placeholder="Ваш e-mail"
+                                required
+                            />
+                            <button type="submit" class="contact__button">
+                                ПОДПИСАТЬСЯ
+                            </button>
+                        </div>
+                        <div class="contact-checkbox">
+                            <label for="01" class="contact__control">
                                 <input
-                                    class="contact__email"
-                                    type="email"
-                                    placeholder="Ваш e-mail"
-                                    required
+                                    type="checkbox"
+                                    id="01"
+                                    class="checkbox__input"
                                 />
-                                <button type="submit" class="contact__button">
-                                    ПОДПИСАТЬСЯ
-                                </button>
-                            </div>
-                            <div class="contact-checkbox">
-                                <label for="01" class="contact__control">
-                                    <input
-                                        type="checkbox"
-                                        id="01"
-                                        class="checkbox__input"
-                                    />
-                                    <span class="control__mark"></span>
-                                </label>
-                                <p class="contact__text">
-                                    Согласен с обработкой
-                                    <a href="#" class="contact__link">
-                                        персональных данных</a
-                                    >
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-                <section class="info">
+                                <span class="control__mark"></span>
+                            </label>
+                            <p class="contact__text">
+                                Согласен с обработкой
+                                <a href="#" class="contact__link">
+                                    персональных данных</a
+                                >
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="info">
+                <div class="header">
                     <div class="info-wrapper">
                         <div class="info-box">
                             <h3 class="event__title" id="info-fit">
@@ -342,95 +343,93 @@
                             </p>
                         </div>
                     </div>
-                </section>
-            </main>
-            <footer>
-                <div class="header-container header-container--gray">
-                    <a class="header-container__logo" href="#"></a>
-                    <div class="navigation">
-                        <nav>
-                            <ul class="navigation__list">
-                                <li>
-                                    <a
-                                        class="navigation__item"
-                                        href="#event-fit"
-                                        >Мероприятия</a
-                                    >
-                                </li>
-                                <li>
-                                    <a class="navigation__item" href="#menu-fit"
-                                        >Расписание</a
-                                    >
-                                </li>
-                                <li>
-                                    <a class="navigation__item" href="#info-fit"
-                                        >О компании</a
-                                    >
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <nav>
-                        <ul class="navigation-icons navigation-icons--bool">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="header-container header-container--gray">
+                <a class="header-container__logo" href="#"></a>
+                <div class="navigation">
+                    <nav class="navigation__footer">
+                        <ul class="navigation__list">
                             <li>
-                                <a href="#" class="navigation-icons__email"
-                                    >info@freefit.com</a
+                                <a class="navigation__item" href="#event-fit"
+                                    >Мероприятия</a
                                 >
                             </li>
                             <li>
-                                <a class="navigation-icons__inst" href="#"></a>
+                                <a class="navigation__item" href="#menu-fit"
+                                    >Расписание</a
+                                >
                             </li>
                             <li>
-                                <a class="navigation-icons__fb" href="#"></a>
+                                <a class="navigation__item" href="#info-fit"
+                                    >О компании</a
+                                >
                             </li>
                         </ul>
                     </nav>
                 </div>
-            </footer>
-
-            <!-- Mobile menu -->
-            <div id="mobile" class="mobile">
-                <ul class="header-nav">
-                    <li><a href="index.html">Мероприятия</a></li>
-                    <li><a href="#" class="active">Расписание</a></li>
-                    <li><a href="#">О компании</a></li>
-                </ul>
-                <button class="burger-close" onclick="closeModal()"></button>
+                <nav>
+                    <ul class="navigation-icons navigation-icons--bool">
+                        <li>
+                            <a href="#" class="navigation-icons__email"
+                                >info@freefit.com</a
+                            >
+                        </li>
+                        <li>
+                            <a class="navigation-icons__inst" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="navigation-icons__fb" href="#"></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+        </footer>
 
-            <!-- Modal window -->
+        <!-- Mobile menu -->
+        <div id="mobile" class="mobile">
+            <ul class="header-nav">
+                <li><a href="index.html">Мероприятия</a></li>
+                <li><a href="#" class="active">Расписание</a></li>
+                <li><a href="#">О компании</a></li>
+            </ul>
+            <button class="burger-close" onclick="closeModal()"></button>
+        </div>
 
-            <div class="modal" id="popup">
-                <div class="modal-container">
-                    <a href="#" class="modal-container__close"></a>
-                    <h3 class="modal-container__title">
-                        Заявка на участие в наших инфо-продуктах
-                        <span class="modal-container__span"></span>
-                    </h3>
-                    <p class="modal-container__text">
-                        Заполните все поля, и мы пришлем информацию в ближайшее
-                        время
-                    </p>
-                    <form action="#form" class="modal-container__form">
-                        <input
-                            type="email"
-                            placeholder="Ваш e-mail"
-                            name="email"
-                            class="modal-container__email"
-                            required
-                        />
-                        <input
-                            type="tel"
-                            placeholder="Ваш номер телефона"
-                            name="phone"
-                            class="modal-container__email"
-                            required
-                        />
-                        <button type="submit" class="modal-container__button">
-                            отправить
-                        </button>
-                    </form>
-                </div>
+        <!-- Modal window -->
+
+        <div class="modal" id="popup">
+            <div class="modal-container">
+                <a href="#" class="modal-container__close"></a>
+                <h3 class="modal-container__title">
+                    Заявка на участие в наших инфо-продуктах
+                    <span class="modal-container__span"></span>
+                </h3>
+                <p class="modal-container__text">
+                    Заполните все поля, и мы пришлем информацию в ближайшее
+                    время
+                </p>
+                <form action="#form" class="modal-container__form">
+                    <input
+                        type="email"
+                        placeholder="Ваш e-mail"
+                        name="email"
+                        class="modal-container__email"
+                        required
+                    />
+                    <input
+                        type="tel"
+                        placeholder="Ваш номер телефона"
+                        name="phone"
+                        class="modal-container__email"
+                        required
+                    />
+                    <button type="submit" class="modal-container__button">
+                        отправить
+                    </button>
+                </form>
             </div>
         </div>
 

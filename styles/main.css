@@ -652,6 +652,7 @@ input:invalid {
 
 .header-container--gray {
     background-color: #F3F3F3 ;
+    justify-content: space-evenly;
 }
 
 .navigation-icons__email {
@@ -698,7 +699,7 @@ input:invalid {
         max-width: 300px;
         background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
         text-align: center;
-        position: absolute;
+        position: fixed;
         left: 0;
         right: 0;
         margin: 20px auto 0;
@@ -1050,7 +1051,7 @@ input:invalid {
     }
     .banner-title {
         font-size: 33px;
-        padding-top: 18px;
+        padding-top: 43px;
         text-align: center;
     }
     .banner-link {
@@ -1084,7 +1085,7 @@ input:invalid {
     .banner-img {
         width: 100%;
         height: 100%;
-        top: 0;
+        top: 24px;
         right: 0;
         background-position: bottom center;
     }
@@ -1111,15 +1112,15 @@ input:invalid {
         padding-bottom: 33px;
     }
     .event-group {
-        width: 280px;
+        width: 303px;
         height: 450px;
     }
     .event-group--trainer {
-        width: 280px;
+        width: 303px;
         height: 450px;
     }
     .event-group--yoga {
-        width: 280px;
+        width: 303px;
         height: 450px;
     }
     .event__name {
@@ -1136,6 +1137,10 @@ input:invalid {
     .contact {
         margin-bottom: 59px;
         width: 576px;
+    }
+    .contact__control {
+
+        padding-left: 17px;
     }
     .contact__title {
         font-size: 35px;
@@ -1216,9 +1221,6 @@ input:invalid {
     .contact__email {
         width: 140px;
     }
-    .contact__control {
-        padding-left: 7px;
-    }
     .contact__button {
         padding: 24px 85px;
     }
@@ -1259,4 +1261,5 @@ input:invalid {
     .modal-container__close {
         z-index: 15;
     }
+
 }
